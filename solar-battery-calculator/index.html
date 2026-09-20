@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Battery Size Calculator</nav>
 <h1>Solar Battery Size Calculator</h1>
-<p class="answer">This <strong>solar battery calculator</strong> sizes storage as daily energy × days ÷ usable depth of discharge ÷ round-trip efficiency. To cover 10 kWh for one day at 90% and 90%, you need <strong>12.35 kWh</strong> of rated capacity, or 257.2 Ah at 48 V. Take both percentages from your battery’s spec sheet.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="solarBattery"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>solar battery calculator</strong> sizes storage as daily energy × days ÷ usable depth of discharge ÷ round-trip efficiency. To cover 10 kWh for one day at 90% and 90%, you need <strong>12.35 kWh</strong> of rated capacity, or 257.2 Ah at 48 V. Take both percentages from your battery’s spec sheet.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How big a battery do I need for my solar system?</h2>
 <p>Size the battery to the energy you want it to supply, not to your whole bill. List the loads you want kept running, add up their daily kWh, then scale up for the share of capacity you cannot use and the energy lost in charging and discharging.</p><p>The default example, line by line:</p><ol><li>Energy to cover: 10 kWh a day × 1 day = 10 kWh.</li><li>Divide by usable depth of discharge: 10 ÷ 0.90 = 11.11 kWh.</li><li>Divide by round-trip efficiency: 11.11 ÷ 0.90 = 12.35 kWh of rated capacity.</li></ol><p>Covering a whole home is a much bigger job. The average U.S. home used 10,791 kWh in 2022 (<a href="https://www.eia.gov/tools/faqs/faq.php?id=97&t=3" rel="nofollow noopener">EIA</a>), about 29.6 kWh a day, nearly three times the default. If whole-home coverage is out of reach, size for essentials instead, such as refrigeration, lights, internet, a sump pump and medical devices.</p><p>To total your loads, list each appliance’s watts and hours in the <a href="/electricity-cost-calculator/">electricity cost calculator</a>, then divide the monthly kWh by 30. Check the inverter’s continuous and surge ratings as well, since the battery’s capacity says nothing about how many loads it can run at once.</p>
@@ -60,7 +59,7 @@
 <li><a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing" rel="nofollow noopener">California Public Utilities Commission — Net Energy Metering and Net Billing</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
 <li><a href="/solar-panel-angle-calculator/">Solar Panel Angle Calculator</a></li>
 <li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
@@ -79,5 +78,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

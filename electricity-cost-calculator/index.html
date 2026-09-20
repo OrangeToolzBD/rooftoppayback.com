@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Electricity Cost Calculator</nav>
 <h1>Electricity Cost Calculator</h1>
-<p class="answer">An <strong>electricity cost calculator</strong> multiplies watts × hours × days ÷ 1,000 to get kWh, then multiplies by your price. A 1,500 W space heater run 4 hours a day for 30 days uses 180 kWh, about <strong>$28.69 a month</strong> at Texas’s June 2026 average of 15.94¢ (<a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA</a>).</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="electricityCost"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">An <strong>electricity cost calculator</strong> multiplies watts × hours × days ÷ 1,000 to get kWh, then multiplies by your price. A 1,500 W space heater run 4 hours a day for 30 days uses 180 kWh, about <strong>$28.69 a month</strong> at Texas’s June 2026 average of 15.94¢ (<a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA</a>).</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How do I calculate the cost of electricity for an appliance?</h2>
 <p>Find the appliance’s watts, estimate how long it runs, convert to kWh, and multiply by your price per kWh. The formula is: monthly cost = watts × hours per day × days per month ÷ 1,000 × price.</p><p>The default list in the calculator, at the Texas price:</p><div class="table-wrap"><table class="data"><thead><tr><th>Appliance</th><th>Use</th><th>kWh a month</th><th>Cost a month</th></tr></thead><tbody><tr><td>Space heater, 1,500 W</td><td>4 h × 30 days</td><td>180</td><td>$28.69</td></tr><tr><td>Gaming PC, 400 W</td><td>3 h × 30 days</td><td>36</td><td>$5.74</td></tr><tr><td><strong>Total</strong></td><td></td><td><strong>216</strong></td><td><strong>$34.43</strong></td></tr></tbody></table></div><p>That is $413.16 a year. The wattages are examples; use the figure on your own appliance’s label or manual.</p><p>For appliances that cycle on and off, such as refrigerators, freezers and air conditioners, count only the hours the motor or compressor actually runs, or the estimate will be too high. A plug-in energy meter gives a measured figure if you have one.</p><p>Your real price per kWh is your total bill divided by the kWh used, because it includes delivery charges, fees and taxes. Enter it in the “your own price” box to replace the state average.</p>
@@ -55,7 +54,7 @@
 <li><a href="https://www.eia.gov/tools/faqs/faq.php?id=97&amp;t=3" rel="nofollow noopener">U.S. Energy Information Administration — How much electricity does an American home use?</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/kwh-calculator/">kWh Calculator</a></li>
 <li><a href="/generator-size-calculator/">Generator Size Calculator</a></li>
 <li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
@@ -74,5 +73,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › kWh Calculator</nav>
 <h1>kWh Calculator</h1>
-<p class="answer">This <strong>kWh calculator</strong> converts power and time into energy: kWh = watts × hours ÷ 1,000. A 1,500 W appliance running for 3 hours uses <strong>4.5 kWh</strong>. It also works in reverse, turning kWh over a number of hours back into average watts, and converts battery mAh or amp-hours to kWh at a given voltage.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="kwhCalc"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>kWh calculator</strong> converts power and time into energy: kWh = watts × hours ÷ 1,000. A 1,500 W appliance running for 3 hours uses <strong>4.5 kWh</strong>. It also works in reverse, turning kWh over a number of hours back into average watts, and converts battery mAh or amp-hours to kWh at a given voltage.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How do you convert watts to kWh?</h2>
 <p>Multiply watts by hours, then divide by 1,000. The division converts watt-hours to kilowatt-hours, the unit on your electricity bill.</p><ul><li>1,500 W × 3 hours = 4,500 Wh = 4.5 kWh.</li><li>60 W × 10 hours = 600 Wh = 0.6 kWh.</li><li>3,000 W × 0.5 hours = 1,500 Wh = 1.5 kWh.</li></ul><p>To go the other way, divide kWh by hours and multiply by 1,000. Using 4.5 kWh over 3 hours is an average draw of 1,500 W. Choose “kWh → watts” in the calculator for this.</p><p>To price the energy, multiply kWh by your rate. At Texas’s June 2026 average of 15.94¢ (<a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA</a>), the 4.5 kWh above costs about 72¢. The <a href="/electricity-cost-calculator/">electricity cost calculator</a> does this for a whole list of appliances by the month.</p><p>For larger amounts, 1 megawatt-hour (MWh) is 1,000 kWh, so divide kWh by 1,000 to get MWh.</p>
@@ -54,7 +53,7 @@
 <li><a href="https://www.eia.gov/tools/faqs/faq.php?id=97&amp;t=3" rel="nofollow noopener">U.S. Energy Information Administration — How much electricity does an American home use?</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/electricity-cost-calculator/">Electricity Cost Calculator</a></li>
 <li><a href="/generator-size-calculator/">Generator Size Calculator</a></li>
 <li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
@@ -73,5 +72,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

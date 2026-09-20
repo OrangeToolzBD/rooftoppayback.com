@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › <a href="/solar-panel-cost/">Solar panel cost by state</a> › Solar Panel Cost in Rhode Island</nav>
 <h1>Solar Panel Cost in Rhode Island</h1>
-<p class="answer">In <strong>Rhode Island</strong>, a 7 kW home solar system costs about <strong>$19,390</strong> before incentives at $2.77 per watt (<a href="https://www.energysage.com/local-data/solar-panel-cost/ri/" rel="nofollow noopener">EnergySage</a>, September 2026). At 29.23¢ per kWh (<a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA</a>, June 2026), it pays for itself in about <strong>7.0 years</strong>.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="payback" data-preset='{"state":"RI"}'><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">In <strong>Rhode Island</strong>, a 7 kW home solar system costs about <strong>$19,390</strong> before incentives at $2.77 per watt (<a href="https://www.energysage.com/local-data/solar-panel-cost/ri/" rel="nofollow noopener">EnergySage</a>, September 2026). At 29.23¢ per kWh (<a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA</a>, June 2026), it pays for itself in about <strong>7.0 years</strong>.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <h2>Rhode Island solar numbers at a glance</h2>
 <div class="table-wrap"><table class="data">
 <thead><tr><th>Figure</th><th class="num">Rhode Island</th><th>Source</th></tr></thead>
@@ -68,7 +67,7 @@
 <li><a href="https://upriseri.com/article/utility-seeks-new-solar-credit-rules-from-regulators/" rel="nofollow noopener">Uprise RI — Utility seeks new solar credit rules from regulators (August 2026)</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
 <li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
 <li><a href="/electricity-cost-calculator/">Electricity Cost Calculator</a></li>
@@ -87,5 +86,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

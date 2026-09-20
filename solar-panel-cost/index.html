@@ -22,7 +22,7 @@
 
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Panel Cost by State</nav>
 <h1>Solar Panel Cost by State</h1>
@@ -112,7 +112,7 @@
 <li><a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing" rel="nofollow noopener">California Public Utilities Commission — Net Energy Metering and Net Billing</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/solar-payback-calculator/">Solar Payback Calculator</a></li>
 <li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
 <li><a href="/solar-loan-calculator/">Solar Loan Calculator</a></li>
@@ -131,5 +131,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Payback Calculator</nav>
 <h1>Solar Payback Calculator</h1>
-<p class="answer"><strong>Are solar panels worth it?</strong> For a 7 kW system with no incentives, simple payback runs from 3.9 years in Hawaii to 21.3 years in North Dakota, with a middle state (Illinois) at 10.7 years. Those figures use <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA June 2026 electricity prices</a>, PVGIS sunlight data and EnergySage installed costs. Enter your own numbers to see yours.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="payback"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer"><strong>Are solar panels worth it?</strong> For a 7 kW system with no incentives, simple payback runs from 3.9 years in Hawaii to 21.3 years in North Dakota, with a middle state (Illinois) at 10.7 years. Those figures use <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA June 2026 electricity prices</a>, PVGIS sunlight data and EnergySage installed costs. Enter your own numbers to see yours.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How long does it take for solar panels to pay for themselves?</h2>
 <p>Most home systems in the U.S. pay for themselves in roughly 4 to 21 years, depending on the state. Payback is the point where the electricity you no longer buy adds up to what the system cost. Our state-by-state run puts 20 of 51 jurisdictions (the states plus DC) under 10 years, with the median at 10.7 years.</p><p>EnergySage, which surveys installer quotes, puts typical breakeven at “about 10 years” nationally (<a href="https://www.energysage.com/local-data/solar-panel-cost/" rel="nofollow noopener">EnergySage, updated June 30, 2026</a>). That lines up with the middle of our table, but the spread around it is wide, which is why a national average tells you little about your own roof.</p><p>The calculator works year by year. Each year’s savings are the kWh the panels make, times your electricity price, times the share of that price your utility credits. It adds those savings up until the running total covers the net cost, then interpolates inside the year when that happens. If the total never gets there within 40 years, it says so. It also shows 25-year savings and the net gain after cost.</p>
@@ -64,7 +63,7 @@
 <li><a href="https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Publications/Fact-Sheets/NY-Sun-The-120-Rule.pdf" rel="nofollow noopener">NYSERDA — NY-Sun fact sheet: The 120% Rule</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
 <li><a href="/solar-panel-cost/">Solar Panel Cost by State</a></li>
 <li><a href="/solar-loan-calculator/">Solar Loan Calculator</a></li>
@@ -83,5 +82,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Panel Cost Calculator</nav>
 <h1>Solar Panel Cost Calculator</h1>
-<p class="answer">This <strong>solar panel cost calculator</strong> multiplies system size by your state’s average installed price per watt. A 6 kW system in California at $2.52 per watt comes to about <strong>$15,120</strong> before incentives (<a href="https://www.energysage.com/local-data/solar-panel-cost/ca/" rel="nofollow noopener">EnergySage, September 2026</a>). Enter your yearly kWh instead and the tool sizes the system from your state’s modelled sunlight first.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="costEstimate"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>solar panel cost calculator</strong> multiplies system size by your state’s average installed price per watt. A 6 kW system in California at $2.52 per watt comes to about <strong>$15,120</strong> before incentives (<a href="https://www.energysage.com/local-data/solar-panel-cost/ca/" rel="nofollow noopener">EnergySage, September 2026</a>). Enter your yearly kWh instead and the tool sizes the system from your state’s modelled sunlight first.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much do solar panels cost for a home?</h2>
 <p>Nationally, installed home solar averages about $2.60 per watt before incentives, according to EnergySage’s June 30, 2026 update (<a href="https://www.energysage.com/local-data/solar-panel-cost/" rel="nofollow noopener">EnergySage</a>). At that rate, each kW of panels costs about $2,600, so a 7 kW system runs near $18,200 and a 10 kW system near $26,000 before any rebates.</p><p>EnergySage also publishes averages by system size, and larger systems cost less per watt:</p><div class="table-wrap"><table class="data"><thead><tr><th>System size</th><th>Average $/W</th><th>Average cost</th></tr></thead><tbody><tr><td>4 kW</td><td>$2.89</td><td>$11,560</td></tr><tr><td>6 kW</td><td>$2.68</td><td>$16,080</td></tr><tr><td>8 kW</td><td>$2.62</td><td>$20,960</td></tr><tr><td>10 kW</td><td>$2.58</td><td>$25,800</td></tr><tr><td>12 kW</td><td>$2.56</td><td>$30,720</td></tr><tr><td>15 kW</td><td>$2.47</td><td>$37,050</td></tr></tbody></table></div><p>The calculator uses one state average for every size, so it will run a little high for large systems and a little low for small ones. The federal residential credit no longer applies to systems placed in service after December 31, 2025, so these are also roughly your out-of-pocket costs unless a state or utility program applies. See the <a href="/solar-tax-credit-2026/">2026 tax credit page</a> for details.</p>
@@ -58,7 +57,7 @@
 <li><a href="https://consumer.ftc.gov/articles/solar-power-your-home" rel="nofollow noopener">Federal Trade Commission — Solar Power for Your Home</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/solar-payback-calculator/">Solar Payback Calculator</a></li>
 <li><a href="/solar-panel-cost/">Solar Panel Cost by State</a></li>
 <li><a href="/solar-loan-calculator/">Solar Loan Calculator</a></li>
@@ -77,5 +76,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Loan Calculator</nav>
 <h1>Solar Loan Calculator</h1>
-<p class="answer">This <strong>solar loan calculator</strong> compares your monthly loan payment with estimated bill savings. A $20,000 loan at 6.99% APR over 20 years costs <strong>$154.94 a month</strong> and $17,185.54 in total interest. An 8 kW Texas system saves about $160.78 a month at <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA’s June 2026 price</a> of 15.94¢, leaving you $5.84 ahead in year one.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="solarLoan"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>solar loan calculator</strong> compares your monthly loan payment with estimated bill savings. A $20,000 loan at 6.99% APR over 20 years costs <strong>$154.94 a month</strong> and $17,185.54 in total interest. An 8 kW Texas system saves about $160.78 a month at <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA’s June 2026 price</a> of 15.94¢, leaving you $5.84 ahead in year one.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much is a monthly solar loan payment?</h2>
 <p>The payment follows the standard amortization formula: loan amount × monthly rate ÷ (1 − (1 + monthly rate)^−months). Enter the APR from your loan offer rather than an advertised rate.</p><p>Term changes the payment and the total interest in opposite directions. The same $20,000 at 6.99% costs:</p><div class="table-wrap"><table class="data"><thead><tr><th>Term</th><th>Monthly payment</th><th>Total interest</th></tr></thead><tbody><tr><td>10 years</td><td>$232.11</td><td>$7,853.67</td></tr><tr><td>20 years</td><td>$154.94</td><td>$17,185.54</td></tr></tbody></table></div><p>The FTC suggests asking any lender what you will pay up front, what APR you will pay, and how the payments are calculated (<a href="https://consumer.ftc.gov/articles/solar-power-your-home" rel="nofollow noopener">FTC</a>). With the federal residential credit gone for systems placed in service after December 31, 2025 (<a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow noopener">IRS</a>), check whether an offer still assumes one.</p>
@@ -56,7 +55,7 @@
 <li><a href="https://www.tax.ny.gov/pit/credits/solar_energy_system_equipment_credit.htm" rel="nofollow noopener">New York State Department of Taxation and Finance — Solar energy system equipment credit</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/solar-payback-calculator/">Solar Payback Calculator</a></li>
 <li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
 <li><a href="/solar-panel-cost/">Solar Panel Cost by State</a></li>
@@ -75,5 +74,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

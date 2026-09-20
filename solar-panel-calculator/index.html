@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/solar-panel-calculator/">Panel Calculator</a><a href="/solar-panel-cost-calculator/">Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Panel Calculator: How Many Panels Do I Need?</nav>
 <h1>Solar Panel Calculator: How Many Panels Do I Need?</h1>
-<p class="answer">This <strong>solar panel calculator</strong> divides your yearly electricity use by what 1 kW of panels produces in your state, then by panel wattage. With Texas defaults, 1,000 kWh a month needs a <strong>7.9 kW</strong> system, or 20 panels of 400 W, about $17,845 before incentives. Production comes from <a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">PVGIS</a> modelling at each state capital.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
 <div id="calculator" data-calc="solarSize"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>solar panel calculator</strong> divides your yearly electricity use by what 1 kW of panels produces in your state, then by panel wattage. With Texas defaults, 1,000 kWh a month needs a <strong>7.9 kW</strong> system, or 20 panels of 400 W, about $17,845 before incentives. Production comes from <a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">PVGIS</a> modelling at each state capital.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How many solar panels do I need?</h2>
 <p>Your panel count is your yearly kWh use, divided by your state’s yearly output per kW, divided by the panel size in kW, rounded up. The formula is short, but the two inputs you supply, your usage and your panel wattage, change the answer most.</p><p>With the Texas default of 1,000 kWh a month:</p><ol><li>Yearly use: 1,000 × 12 = 12,000 kWh.</li><li>System size: 12,000 ÷ 1,513 kWh per kW = 7.93 kW.</li><li>Panels: 7,930 W ÷ 400 W = 19.8, rounded up to 20.</li><li>Cost: 7.93 kW × $2.25 per watt = about $17,845 before incentives.</li></ol><p>Use a full 12 months of bills if you can, since summer cooling and winter heating shift monthly use a lot. For context, the average U.S. residential customer bought 10,791 kWh in 2022, about 899 kWh a month (<a href="https://www.eia.gov/tools/faqs/faq.php?id=97&t=3" rel="nofollow noopener">EIA</a>). At that level, a Texas home needs 7.1 kW, or 18 panels of 400 W.</p><p>The result assumes a well-oriented, unshaded roof. Treat it as a starting point for comparing installer designs, which model your actual roof.</p>
@@ -58,7 +57,7 @@
 <li><a href="https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Publications/Fact-Sheets/NY-Sun-The-120-Rule.pdf" rel="nofollow noopener">NYSERDA — NY-Sun fact sheet: The 120% Rule</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/solar-battery-calculator/">Solar Battery Size Calculator</a></li>
 <li><a href="/solar-panel-angle-calculator/">Solar Panel Angle Calculator</a></li>
 <li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
@@ -77,5 +76,6 @@
 <div class="footer-bottom"><p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p><p>© <span id="y"></span> Rooftop Payback</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>
