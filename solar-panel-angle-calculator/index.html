@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Panel Tilt Angle Calculator by State</title>
+<meta name="description" content="Find the best fixed tilt and direction for solar panels in your state, and how high the sun gets on any date, using PVGIS and NOAA methods.">
+<link rel="canonical" href="https://rooftoppayback.com/solar-panel-angle-calculator/">
+<meta property="og:title" content="Solar Panel Tilt Angle Calculator by State">
+<meta property="og:description" content="Find the best fixed tilt and direction for solar panels in your state, and how high the sun gets on any date, using PVGIS and NOAA methods.">
+<meta property="og:url" content="https://rooftoppayback.com/solar-panel-angle-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://rooftoppayback.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rooftoppayback.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#b45309;--font:"Segoe UI", Roboto, Arial, sans-serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rooftoppayback.com/#org","name":"Rooftop Payback","url":"https://rooftoppayback.com/","description":"Rooftop Payback is a free solar payback calculator that uses EIA electricity prices, PVGIS solar production estimates and EnergySage installed-cost data, checked monthly."},{"@type":"WebApplication","name":"Solar Panel Angle Calculator","url":"https://rooftoppayback.com/solar-panel-angle-calculator/","description":"Find the best fixed tilt and direction for solar panels in your state, and how high the sun gets on any date, using PVGIS and NOAA methods.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://rooftoppayback.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Rooftop Payback","item":"https://rooftoppayback.com/"},{"@type":"ListItem","position":2,"name":"Solar Panel Angle Calculator","item":"https://rooftoppayback.com/solar-panel-angle-calculator/"}]}]}</script>
+
+<script src="/assets/solar-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a><a href="/solar-panel-cost-calculator/">Solar Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Panel Angle Calculator</nav>
+<h1>Solar Panel Angle Calculator</h1>
+<p class="answer">This <strong>solar panel tilt angle calculator</strong> gives the fixed tilt that maximizes yearly output at your state’s capital, from the European Commission’s <a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">PVGIS</a> model. In Colorado, the best tilt is <strong>38°</strong>, facing 6° east of south. It also shows how high the sun climbs at noon on any date, using NOAA’s solar position equations.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
+<div id="calculator" data-calc="solarAngle"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>What is the best angle for solar panels?</h2>
+<p>The best fixed angle across the 51 state capitals ranges from 19° in Honolulu to 41° in Bismarck, according to PVGIS 5.2 optimization (<a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">PVGIS</a>). In every capital, the optimum is at or below the latitude: Phoenix sits at 33.4° north with a best tilt of 33°, while Olympia, at 47.0°, is best at 36°.</p><p>A common shortcut is to tilt panels at your latitude. The PVGIS results show the gap widening toward the north. Juneau, at 58.3° north, has a modelled optimum of just 39°.</p><p>Being a few degrees off matters little. In a PVGIS run for Denver (September 16, 2026), 1 kW at the best 38° tilt produced 1,642 kWh a year. At 20° it produced 4.0% less, and at 55° it produced 3.5% less. Laying panels flat cost 17.2%.</p><p>So on a pitched roof, the roof’s own angle is usually close enough, and flush mounting avoids the cost of tilt racks. The production loss for your roof angle can be fed into the <a href="/solar-payback-calculator/">payback calculator</a> through the yearly production input.</p>
+<h2>Should panels face due south?</h2>
+<p>In the U.S., panels facing roughly south produce the most over a year, and small deviations cost little. PVGIS puts the best direction for most state capitals within 7° of due south; the widest are Santa Fe, 11° east, and Olympia, 9° west.</p><p>Facing east or west costs much more than a small tilt error. In the Denver PVGIS run at a 38° tilt, east-facing panels produced 21.8% less than the optimum and west-facing panels 26.4% less. North-facing panels produced 55.8% less. A lower tilt reduces the east or west penalty, since a flatter panel faces the sky more directly.</p><p>East- and west-facing arrays shift output toward morning or evening, which can matter under net billing if your utility values evening exports more. California’s commission (<a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing" rel="nofollow noopener">CPUC</a>), for example, says export values can rise above retail on late summer evenings. Check your own tariff before choosing a direction for that reason alone.</p><p>If your best roof faces east or west, lower the yearly production figure in the <a href="/solar-panel-calculator/">solar panel calculator</a> by the loss and size the system again.</p>
+<h2>How high is the sun at noon in winter and summer?</h2>
+<p>The sun’s noon height equals roughly 90° minus your latitude plus the sun’s declination, which runs from about +23.4° in late June to −23.4° in late December. The calculator computes it exactly with NOAA’s General Solar Position Calculations (<a href="https://gml.noaa.gov/grad/solcalc/solareqns.PDF" rel="nofollow noopener">NOAA Global Monitoring Laboratory</a>), at the state capital, in standard time.</p><div class="table-wrap"><table class="data"><thead><tr><th>Capital</th><th>June 21, 2026</th><th>December 21, 2026</th></tr></thead><tbody><tr><td>Honolulu, HI</td><td>87.9°</td><td>45.3°</td></tr><tr><td>Austin, TX</td><td>83.2°</td><td>36.3°</td></tr><tr><td>Phoenix, AZ</td><td>80.0°</td><td>33.1°</td></tr><tr><td>Denver, CO</td><td>73.7°</td><td>26.8°</td></tr><tr><td>Albany, NY</td><td>70.8°</td><td>23.9°</td></tr><tr><td>Saint Paul, MN</td><td>68.5°</td><td>21.6°</td></tr><tr><td>Olympia, WA</td><td>66.4°</td><td>19.5°</td></tr><tr><td>Juneau, AK</td><td>55.2°</td><td>8.3°</td></tr></tbody></table></div><p>The swing is about 47° everywhere, which is why a fixed tilt is a compromise. In Denver on the March 20 equinox, the noon sun sits at 50.2°. Low winter sun also lengthens shadows from trees and neighboring buildings, so check for shade in December, not just in summer.</p><p>The calculator does not apply daylight saving time, so add an hour to the solar noon it shows while daylight saving time is in effect.</p>
+<h2>Is it worth adjusting the tilt by season?</h2>
+<p>Adjusting tilt by season gains a modest amount. In the Denver PVGIS run, picking the best of three tilts (20°, 38° or 55°) for each month raised yearly output to 1,725 kWh, 5.0% more than a fixed 38°.</p><p>The gains come from steeper winter angles, when the sun is low, and flatter summer angles. At 55°, Denver panels produced about 128 kWh in January against 117 kWh at 38°. At 20°, they produced about 163 kWh in June against 150 kWh at 38°.</p><p>Seasonal adjustment suits ground mounts or off-grid systems where winter output matters most. For a battery-based cabin, a steeper fixed tilt can lift the months when power is scarce; size storage for those months with the <a href="/solar-battery-calculator/">solar battery calculator</a>.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How do I calculate the optimal tilt angle for my solar panels?</summary><p>The most reliable method is to model yearly output at several angles for your exact location, which is what PVGIS does when you choose its optimize-slope option. This calculator shows the PVGIS optimum for your state capital. For a site far from the capital, run PVGIS at your own address, since latitude changes the answer.</p></details>
+<details><summary>What angle should I tilt my solar panels?</summary><p>Across U.S. state capitals, PVGIS optimal fixed tilts run from 19° to 41°, lower than the latitude in every case. On a pitched roof, mounting flush at the roof’s angle is usually close: in Denver, tilting 17° to 18° away from the optimum in either direction cost 4.0% or less of yearly output.</p></details>
+<details><summary>What is the best angle for solar panels by ZIP code?</summary><p>This tool works by state, using each capital as the reference point. For a specific address, the European Commission’s PVGIS tool lets you click your location on a map and optimize slope and direction for it. Enter the result in the yearly production field of the payback calculator to use it.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA — Electric Power Monthly, Table 5.6.A</a></li>
+<li><a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">European Commission JRC — PVGIS</a></li>
+<li><a href="https://www.energysage.com/local-data/solar-panel-cost/" rel="nofollow noopener">EnergySage — Cost of solar panels</a></li>
+<li><a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow noopener">IRS — Residential Clean Energy Credit</a></li>
+<li><a href="https://www.dsireusa.org/" rel="nofollow noopener">DSIRE — Database of State Incentives for Renewables &amp; Efficiency</a></li>
+<li><a href="https://gml.noaa.gov/grad/solcalc/solareqns.PDF" rel="nofollow noopener">NOAA Global Monitoring Laboratory — General Solar Position Calculations</a></li>
+<li><a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing" rel="nofollow noopener">California Public Utilities Commission — Net Energy Metering and Net Billing</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
+<li><a href="/solar-battery-calculator/">Solar Battery Size Calculator</a></li>
+<li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
+<li><a href="/electricity-cost-calculator/">Electricity Cost Calculator</a></li>
+<li><a href="/generator-size-calculator/">Generator Size Calculator</a></li>
+<li><a href="/kwh-calculator/">kWh Calculator</a></li>
+<li><a href="/solar-payback-calculator/">Solar Payback Calculator</a></li>
+<li><a href="/solar-loan-calculator/">Solar Loan Calculator</a></li>
+</ul>
+<p class="disclaimer">Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a> <a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a> <a href="/electricity-cost-calculator/">Electricity Cost Calculator</a> <a href="/generator-size-calculator/">Generator Size Calculator</a> <a href="/kwh-calculator/">kWh Calculator</a> <a href="/solar-payback-calculator/">Solar Payback Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+<p>© <span id="y"></span> Rooftop Payback</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

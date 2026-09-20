@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kWh Calculator: Watts to kWh and Back</title>
+<meta name="description" content="Convert watts and hours to kilowatt-hours, kWh back to watts, and battery mAh or amp-hours to kWh, with the formula for each.">
+<link rel="canonical" href="https://rooftoppayback.com/kwh-calculator/">
+<meta property="og:title" content="kWh Calculator: Watts to kWh and Back">
+<meta property="og:description" content="Convert watts and hours to kilowatt-hours, kWh back to watts, and battery mAh or amp-hours to kWh, with the formula for each.">
+<meta property="og:url" content="https://rooftoppayback.com/kwh-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://rooftoppayback.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rooftoppayback.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#b45309;--font:"Segoe UI", Roboto, Arial, sans-serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rooftoppayback.com/#org","name":"Rooftop Payback","url":"https://rooftoppayback.com/","description":"Rooftop Payback is a free solar payback calculator that uses EIA electricity prices, PVGIS solar production estimates and EnergySage installed-cost data, checked monthly."},{"@type":"WebApplication","name":"kWh Calculator","url":"https://rooftoppayback.com/kwh-calculator/","description":"Convert watts and hours to kilowatt-hours, kWh back to watts, and battery mAh or amp-hours to kWh, with the formula for each.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://rooftoppayback.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Rooftop Payback","item":"https://rooftoppayback.com/"},{"@type":"ListItem","position":2,"name":"kWh Calculator","item":"https://rooftoppayback.com/kwh-calculator/"}]}]}</script>
+
+<script src="/assets/solar-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a><a href="/solar-panel-cost-calculator/">Solar Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › kWh Calculator</nav>
+<h1>kWh Calculator</h1>
+<p class="answer">This <strong>kWh calculator</strong> converts power and time into energy: kWh = watts × hours ÷ 1,000. A 1,500 W appliance running for 3 hours uses <strong>4.5 kWh</strong>. It also works in reverse, turning kWh over a number of hours back into average watts, and converts battery mAh or amp-hours to kWh at a given voltage.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
+<div id="calculator" data-calc="kwhCalc"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How do you convert watts to kWh?</h2>
+<p>Multiply watts by hours, then divide by 1,000. The division converts watt-hours to kilowatt-hours, the unit on your electricity bill.</p><ul><li>1,500 W × 3 hours = 4,500 Wh = 4.5 kWh.</li><li>60 W × 10 hours = 600 Wh = 0.6 kWh.</li><li>3,000 W × 0.5 hours = 1,500 Wh = 1.5 kWh.</li></ul><p>To go the other way, divide kWh by hours and multiply by 1,000. Using 4.5 kWh over 3 hours is an average draw of 1,500 W. Choose “kWh → watts” in the calculator for this.</p><p>To price the energy, multiply kWh by your rate. At Texas’s June 2026 average of 15.94¢ (<a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA</a>), the 4.5 kWh above costs about 72¢. The <a href="/electricity-cost-calculator/">electricity cost calculator</a> does this for a whole list of appliances by the month.</p><p>For larger amounts, 1 megawatt-hour (MWh) is 1,000 kWh, so divide kWh by 1,000 to get MWh.</p>
+<h2>How many kWh is a mAh battery?</h2>
+<p>Multiply the capacity in mAh by the voltage to get milliwatt-hours, then divide by 1,000 for watt-hours and again by 1,000 for kWh. A 5,000 mAh battery at 3.7 V holds 5,000 ÷ 1,000 × 3.7 = 18.5 Wh, which is 0.0185 kWh.</p><p>Voltage is essential. Amp-hours alone do not measure energy, because the same Ah rating stores four times as much at 48 V as at 12 V. Use the nominal voltage printed on the battery.</p><p>The same math sizes home storage. A 12.35 kWh solar battery bank is about 257 Ah at 48 V (kWh × 1,000 ÷ 48). The <a href="/solar-battery-calculator/">solar battery calculator</a> works out that capacity from your daily loads, depth of discharge and efficiency.</p><p>The result is stored energy, not usable energy. Conversion losses and the share of capacity a battery can safely use mean you get back less than the label.</p>
+<h2>What is the difference between kW and kWh?</h2>
+<p>A kilowatt (kW) measures power, the rate of energy use at a moment. A kilowatt-hour (kWh) measures energy, the total used over time. A 1 kW load running for one hour uses 1 kWh; running for 5 hours, it uses 5 kWh.</p><p>Solar systems use both units. System size is rated in kW, while production is counted in kWh. A 7 kW system in Texas is modelled to produce about 10,591 kWh a year (7 × 1,513 kWh per kW, from PVGIS at Austin).</p><p>Generators and inverters are rated in watts or kW because they must meet peak demand at any instant. Batteries and bills are measured in kWh because they track energy over time. Size a backup unit with the <a href="/generator-size-calculator/">generator size calculator</a> and estimate yearly solar output with the <a href="/solar-panel-calculator/">solar panel calculator</a>.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>Is 70 kWh per day a lot?</summary><p>Yes, compared with the average home. EIA reports 10,791 kWh a year for the average U.S. residential customer in 2022, about 29.6 kWh a day, and 14,774 kWh in Louisiana, the highest state, about 40.5 kWh a day (<a href="https://www.eia.gov/tools/faqs/faq.php?id=97&t=3" rel="nofollow noopener">EIA</a>). Seventy kWh a day is more than twice the national figure.</p></details>
+<details><summary>How many kWh is one unit of electricity?</summary><p>One unit on an electricity bill is one kilowatt-hour. It is the energy a 1,000 W appliance uses in one hour, or a 100 W appliance in ten hours. “Unit” is simply another name for a kWh on some bills, so a bill showing 300 units means 300 kWh were used.</p></details>
+<details><summary>How much does 1 kWh per hour cost?</summary><p>Using 1 kWh every hour is a steady 1 kW draw. Over a day that is 24 kWh, which costs about $3.83 at Texas’s June 2026 average of 15.94¢, or about $4.40 at the U.S. average of 18.34¢. Multiply by your own rate for your figure.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA — Electric Power Monthly, Table 5.6.A</a></li>
+<li><a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">European Commission JRC — PVGIS</a></li>
+<li><a href="https://www.energysage.com/local-data/solar-panel-cost/" rel="nofollow noopener">EnergySage — Cost of solar panels</a></li>
+<li><a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow noopener">IRS — Residential Clean Energy Credit</a></li>
+<li><a href="https://www.dsireusa.org/" rel="nofollow noopener">DSIRE — Database of State Incentives for Renewables &amp; Efficiency</a></li>
+<li><a href="https://www.eia.gov/tools/faqs/faq.php?id=97&amp;t=3" rel="nofollow noopener">U.S. Energy Information Administration — How much electricity does an American home use?</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/electricity-cost-calculator/">Electricity Cost Calculator</a></li>
+<li><a href="/generator-size-calculator/">Generator Size Calculator</a></li>
+<li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
+<li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
+<li><a href="/solar-payback-calculator/">Solar Payback Calculator</a></li>
+<li><a href="/solar-panel-angle-calculator/">Solar Panel Angle Calculator</a></li>
+<li><a href="/solar-battery-calculator/">Solar Battery Size Calculator</a></li>
+<li><a href="/solar-loan-calculator/">Solar Loan Calculator</a></li>
+</ul>
+<p class="disclaimer">Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a> <a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a> <a href="/electricity-cost-calculator/">Electricity Cost Calculator</a> <a href="/generator-size-calculator/">Generator Size Calculator</a> <a href="/kwh-calculator/">kWh Calculator</a> <a href="/solar-payback-calculator/">Solar Payback Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+<p>© <span id="y"></span> Rooftop Payback</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Rooftop Payback
+
+> Rooftop Payback is a free solar payback calculator that uses EIA electricity prices, PVGIS solar production estimates and EnergySage installed-cost data, checked monthly.
+
+## Tools
+- [Solar Payback Calculator](https://rooftoppayback.com/solar-payback-calculator/): See how many years solar takes to pay for itself in your state, using real local electricity prices, sunlight and installed costs. Free, no sign-up.
+- [Solar Panel Cost Calculator](https://rooftoppayback.com/solar-panel-cost-calculator/): Estimate what solar costs in your state before incentives, sized to your own electricity use. Uses current installed price per watt for each state.
+- [Solar Panel Calculator: How Many Panels Do I Need?](https://rooftoppayback.com/solar-panel-calculator/): Size a home solar system from your electricity bill: kW needed, number of panels and estimated cost, using your state’s own sunlight data.
+- [Solar Battery Size Calculator](https://rooftoppayback.com/solar-battery-calculator/): Work out how much battery storage you need for backup or off-grid solar, in kWh and amp-hours, from your loads and hours of backup.
+- [Solar Panel Angle Calculator](https://rooftoppayback.com/solar-panel-angle-calculator/): Find the best fixed tilt and direction for solar panels in your state, and how high the sun gets on any date, using PVGIS and NOAA methods.
+- [Solar Loan Calculator](https://rooftoppayback.com/solar-loan-calculator/): Compare a solar loan’s monthly payment with the electricity bill savings in your state, and see the total interest over the term.
+- [Electricity Cost Calculator](https://rooftoppayback.com/electricity-cost-calculator/): See what each appliance costs to run per month and per year at your state’s average electricity price, or your own rate from your bill.
+- [kWh Calculator](https://rooftoppayback.com/kwh-calculator/): Convert watts and hours to kilowatt-hours, kWh back to watts, and battery mAh or amp-hours to kWh, with the formula for each.
+- [Generator Size Calculator](https://rooftoppayback.com/generator-size-calculator/): Add up running and starting watts for the appliances you need during an outage and see what size generator to look for.
+
+## Guides and data
+- [Solar Panel Cost by State](https://rooftoppayback.com/solar-panel-cost/): Installed solar price, electricity price, sunlight and simple payback for every state, in one sortable table with the source and month for each figure.
+- [Is There a Solar Tax Credit in 2026?](https://rooftoppayback.com/solar-tax-credit-2026/): The federal residential solar credit does not apply to systems placed in service after December 31, 2025. What that means for 2026 buyers, per the IRS.
+- [What Is Net Metering?](https://rooftoppayback.com/net-metering/): How net metering credits the solar power you send to the grid, why some states pay less than retail for exports, and how that changes your payback.
+- [Solar Incentives by State (2026)](https://rooftoppayback.com/solar-incentives/): State rebates, tax credits, SRECs and utility programs for home solar in 2026, state by state, each with its official source and the date it was checked.
+
+## Sources
+- EIA — Electric Power Monthly, Table 5.6.A: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a
+- European Commission JRC — PVGIS: https://re.jrc.ec.europa.eu/pvg_tools/en/
+- EnergySage — Cost of solar panels: https://www.energysage.com/local-data/solar-panel-cost/
+- IRS — Residential Clean Energy Credit: https://www.irs.gov/credits-deductions/residential-clean-energy-credit
+- DSIRE — Database of State Incentives for Renewables & Efficiency: https://www.dsireusa.org/

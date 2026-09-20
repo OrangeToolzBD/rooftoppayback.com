@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Battery Size Calculator (kWh and Amp-Hours)</title>
+<meta name="description" content="Work out how much battery storage you need for backup or off-grid solar, in kWh and amp-hours, from your loads and hours of backup.">
+<link rel="canonical" href="https://rooftoppayback.com/solar-battery-calculator/">
+<meta property="og:title" content="Solar Battery Size Calculator (kWh and Amp-Hours)">
+<meta property="og:description" content="Work out how much battery storage you need for backup or off-grid solar, in kWh and amp-hours, from your loads and hours of backup.">
+<meta property="og:url" content="https://rooftoppayback.com/solar-battery-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://rooftoppayback.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rooftoppayback.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#b45309;--font:"Segoe UI", Roboto, Arial, sans-serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rooftoppayback.com/#org","name":"Rooftop Payback","url":"https://rooftoppayback.com/","description":"Rooftop Payback is a free solar payback calculator that uses EIA electricity prices, PVGIS solar production estimates and EnergySage installed-cost data, checked monthly."},{"@type":"WebApplication","name":"Solar Battery Size Calculator","url":"https://rooftoppayback.com/solar-battery-calculator/","description":"Work out how much battery storage you need for backup or off-grid solar, in kWh and amp-hours, from your loads and hours of backup.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://rooftoppayback.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Rooftop Payback","item":"https://rooftoppayback.com/"},{"@type":"ListItem","position":2,"name":"Solar Battery Size Calculator","item":"https://rooftoppayback.com/solar-battery-calculator/"}]}]}</script>
+
+<script src="/assets/solar-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a><a href="/solar-panel-cost-calculator/">Solar Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Battery Size Calculator</nav>
+<h1>Solar Battery Size Calculator</h1>
+<p class="answer">This <strong>solar battery calculator</strong> sizes storage as daily energy × days ÷ usable depth of discharge ÷ round-trip efficiency. To cover 10 kWh for one day at 90% and 90%, you need <strong>12.35 kWh</strong> of rated capacity, or 257.2 Ah at 48 V. Take both percentages from your battery’s spec sheet.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
+<div id="calculator" data-calc="solarBattery"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How big a battery do I need for my solar system?</h2>
+<p>Size the battery to the energy you want it to supply, not to your whole bill. List the loads you want kept running, add up their daily kWh, then scale up for the share of capacity you cannot use and the energy lost in charging and discharging.</p><p>The default example, line by line:</p><ol><li>Energy to cover: 10 kWh a day × 1 day = 10 kWh.</li><li>Divide by usable depth of discharge: 10 ÷ 0.90 = 11.11 kWh.</li><li>Divide by round-trip efficiency: 11.11 ÷ 0.90 = 12.35 kWh of rated capacity.</li></ol><p>Covering a whole home is a much bigger job. The average U.S. home used 10,791 kWh in 2022 (<a href="https://www.eia.gov/tools/faqs/faq.php?id=97&t=3" rel="nofollow noopener">EIA</a>), about 29.6 kWh a day, nearly three times the default. If whole-home coverage is out of reach, size for essentials instead, such as refrigeration, lights, internet, a sump pump and medical devices.</p><p>To total your loads, list each appliance’s watts and hours in the <a href="/electricity-cost-calculator/">electricity cost calculator</a>, then divide the monthly kWh by 30. Check the inverter’s continuous and surge ratings as well, since the battery’s capacity says nothing about how many loads it can run at once.</p>
+<h2>What do depth of discharge and efficiency mean?</h2>
+<p>Depth of discharge is the share of the battery’s rated capacity you can actually use, and round-trip efficiency is the share of charging energy you get back out. Sandia National Laboratories, in a DOE handbook chapter, defines round-trip energy efficiency as discharge energy capacity divided by charge energy capacity, expressed as a percentage (<a href="https://www.sandia.gov/app/uploads/sites/163/2021/09/ESHB_Ch16_Testing_Rosewater.pdf" rel="nofollow noopener">Sandia, 2021</a>).</p><p>A lower usable depth of discharge or a lower efficiency means you need more rated capacity for the same job. At 50% depth of discharge and 85% efficiency, the 10 kWh day calls for 23.53 kWh of capacity, nearly twice the default result.</p><p>Depth of discharge also affects battery life. The same Sandia chapter lists it, along with temperature, among the stress factors used to speed up ageing in battery tests. Use the depth-of-discharge figure on your battery’s spec sheet rather than a generic one, and read the warranty for any limits it sets.</p>
+<h2>How many days of backup should I plan for?</h2>
+<p>Plan for the outages you actually get, which usually means hours, not days. EIA reports that U.S. customers averaged 11 hours without power in 2024, with major events such as hurricanes accounting for 80% of those hours (<a href="https://www.eia.gov/todayinenergy/detail.php?id=66744" rel="nofollow noopener">EIA, December 1, 2025</a>). Outages outside major events average about two hours a year.</p><p>The averages hide wide swings. The same EIA analysis found South Carolina customers averaged nearly 53 hours of interruptions in 2024, the most of any state. If your area sees storm outages that last days, size for more than one day or plan to recharge from your panels.</p><p>Each extra day multiplies the capacity. Three days of 10 kWh at 90% and 90% takes 37.04 kWh. Solar recharging can stretch that, but on cloudy days the panels may not refill the battery, so a conservative plan counts only stored energy.</p><p>If you run a generator alongside storage, size it with the <a href="/generator-size-calculator/">generator size calculator</a> and follow CPSC advice to run portable units outdoors, at least 20 feet from the house (<a href="https://www.cpsc.gov/Newsroom/News-Releases/2026/Winter-Storm-May-Knock-Out-Power-CPSC-Warns-of-Deadly-Carbon-Monoxide-and-Fire-Risks" rel="nofollow noopener">CPSC, 2026</a>).</p>
+<h2>kWh vs amp-hours: which number matters?</h2>
+<p>For home batteries, kWh is the number that matters, because it measures energy regardless of voltage. Amp-hours only describe energy once you know the voltage: kWh = Ah × volts ÷ 1,000. That is why the calculator asks for battery bank voltage before it shows Ah.</p><p>The same 12.35 kWh equals 257.2 Ah at 48 V, 514.4 Ah at 24 V and 1,028.8 Ah at 12 V. A higher-voltage bank needs fewer amp-hours for the same energy, and carries less current for the same power.</p><p>Some batteries are listed in kWh and others in amp-hours at a stated voltage. Convert everything to kWh before you compare prices. The <a href="/kwh-calculator/">kWh calculator</a> converts amp-hours or mAh at any voltage.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How do I calculate how much battery I need for my solar system?</summary><p>Add up the daily kWh of the loads you want covered, multiply by the days of backup, then divide by the usable depth of discharge and the round-trip efficiency from the spec sheet. For 10 kWh a day, one day, 90% and 90%, that is 12.35 kWh. Then confirm the inverter can supply the loads’ combined power.</p></details>
+<details><summary>How long will a 20 kWh solar battery last?</summary><p>Divide its usable output by your load. At 90% depth of discharge and 90% efficiency, a 20 kWh battery delivers about 16.2 kWh, which covers a 10 kWh-a-day essentials list for about 1.6 days, or a home using the U.S. average of about 29.6 kWh a day for roughly half a day, before any solar recharging.</p></details>
+<details><summary>Is a solar battery worth it financially?</summary><p>That depends on how your utility values exports and whether you need backup. Where exports earn less than retail, storing surplus for evening use raises what your solar is worth. California’s commission says storage lets net billing customers use or export stored energy in high-value hours (<a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing" rel="nofollow noopener">CPUC</a>). Compare the battery quote with the extra value you would capture.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA — Electric Power Monthly, Table 5.6.A</a></li>
+<li><a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">European Commission JRC — PVGIS</a></li>
+<li><a href="https://www.energysage.com/local-data/solar-panel-cost/" rel="nofollow noopener">EnergySage — Cost of solar panels</a></li>
+<li><a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow noopener">IRS — Residential Clean Energy Credit</a></li>
+<li><a href="https://www.dsireusa.org/" rel="nofollow noopener">DSIRE — Database of State Incentives for Renewables &amp; Efficiency</a></li>
+<li><a href="https://www.eia.gov/tools/faqs/faq.php?id=97&amp;t=3" rel="nofollow noopener">U.S. Energy Information Administration — How much electricity does an American home use?</a></li>
+<li><a href="https://www.sandia.gov/app/uploads/sites/163/2021/09/ESHB_Ch16_Testing_Rosewater.pdf" rel="nofollow noopener">Sandia National Laboratories — DOE Energy Storage Handbook, Chapter 16: Energy Storage Performance Testing</a></li>
+<li><a href="https://www.eia.gov/todayinenergy/detail.php?id=66744" rel="nofollow noopener">U.S. Energy Information Administration — Hurricanes in 2024 led to the most hours without power in 10 years</a></li>
+<li><a href="https://www.cpsc.gov/Newsroom/News-Releases/2026/Winter-Storm-May-Knock-Out-Power-CPSC-Warns-of-Deadly-Carbon-Monoxide-and-Fire-Risks" rel="nofollow noopener">U.S. Consumer Product Safety Commission — Winter storm generator warning (February 19, 2026)</a></li>
+<li><a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing" rel="nofollow noopener">California Public Utilities Commission — Net Energy Metering and Net Billing</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
+<li><a href="/solar-panel-angle-calculator/">Solar Panel Angle Calculator</a></li>
+<li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
+<li><a href="/electricity-cost-calculator/">Electricity Cost Calculator</a></li>
+<li><a href="/generator-size-calculator/">Generator Size Calculator</a></li>
+<li><a href="/kwh-calculator/">kWh Calculator</a></li>
+<li><a href="/solar-payback-calculator/">Solar Payback Calculator</a></li>
+<li><a href="/solar-loan-calculator/">Solar Loan Calculator</a></li>
+</ul>
+<p class="disclaimer">Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a> <a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a> <a href="/electricity-cost-calculator/">Electricity Cost Calculator</a> <a href="/generator-size-calculator/">Generator Size Calculator</a> <a href="/kwh-calculator/">kWh Calculator</a> <a href="/solar-payback-calculator/">Solar Payback Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+<p>© <span id="y"></span> Rooftop Payback</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

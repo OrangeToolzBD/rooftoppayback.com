@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Loan Calculator: Payment vs Bill Savings</title>
+<meta name="description" content="Compare a solar loan’s monthly payment with the electricity bill savings in your state, and see the total interest over the term.">
+<link rel="canonical" href="https://rooftoppayback.com/solar-loan-calculator/">
+<meta property="og:title" content="Solar Loan Calculator: Payment vs Bill Savings">
+<meta property="og:description" content="Compare a solar loan’s monthly payment with the electricity bill savings in your state, and see the total interest over the term.">
+<meta property="og:url" content="https://rooftoppayback.com/solar-loan-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://rooftoppayback.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rooftoppayback.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#b45309;--font:"Segoe UI", Roboto, Arial, sans-serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rooftoppayback.com/#org","name":"Rooftop Payback","url":"https://rooftoppayback.com/","description":"Rooftop Payback is a free solar payback calculator that uses EIA electricity prices, PVGIS solar production estimates and EnergySage installed-cost data, checked monthly."},{"@type":"WebApplication","name":"Solar Loan Calculator","url":"https://rooftoppayback.com/solar-loan-calculator/","description":"Compare a solar loan’s monthly payment with the electricity bill savings in your state, and see the total interest over the term.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://rooftoppayback.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Rooftop Payback","item":"https://rooftoppayback.com/"},{"@type":"ListItem","position":2,"name":"Solar Loan Calculator","item":"https://rooftoppayback.com/solar-loan-calculator/"}]}]}</script>
+
+<script src="/assets/solar-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Rooftop Payback" width="56" height="34"></a><nav class="site"><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a><a href="/solar-panel-cost-calculator/">Solar Panel Cost</a><a href="/electricity-cost-calculator/">Electricity Cost</a><a href="/generator-size-calculator/">Generator Size</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Rooftop Payback</a> › Solar Loan Calculator</nav>
+<h1>Solar Loan Calculator</h1>
+<p class="answer">This <strong>solar loan calculator</strong> compares your monthly loan payment with estimated bill savings. A $20,000 loan at 6.99% APR over 20 years costs <strong>$154.94 a month</strong> and $17,185.54 in total interest. An 8 kW Texas system saves about $160.78 a month at <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA’s June 2026 price</a> of 15.94¢, leaving you $5.84 ahead in year one.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Rooftop Payback</a></p>
+<div id="calculator" data-calc="solarLoan"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How much is a monthly solar loan payment?</h2>
+<p>The payment follows the standard amortization formula: loan amount × monthly rate ÷ (1 − (1 + monthly rate)^−months). Enter the APR from your loan offer rather than an advertised rate.</p><p>Term changes the payment and the total interest in opposite directions. The same $20,000 at 6.99% costs:</p><div class="table-wrap"><table class="data"><thead><tr><th>Term</th><th>Monthly payment</th><th>Total interest</th></tr></thead><tbody><tr><td>10 years</td><td>$232.11</td><td>$7,853.67</td></tr><tr><td>20 years</td><td>$154.94</td><td>$17,185.54</td></tr></tbody></table></div><p>The FTC suggests asking any lender what you will pay up front, what APR you will pay, and how the payments are calculated (<a href="https://consumer.ftc.gov/articles/solar-power-your-home" rel="nofollow noopener">FTC</a>). With the federal residential credit gone for systems placed in service after December 31, 2025 (<a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow noopener">IRS</a>), check whether an offer still assumes one.</p>
+<h2>Will solar savings cover the loan payment?</h2>
+<p>Whether savings cover the payment depends mostly on your electricity price. The calculator estimates monthly savings as system size × yearly kWh per kW × price ÷ 12, using EIA’s June 2026 state price and PVGIS output at the state capital.</p><p>With the same $20,000, 20-year, 6.99% loan and an 8 kW system:</p><ul><li><strong>Texas:</strong> savings of $160.78 against a $154.94 payment, about $5.84 a month ahead.</li><li><strong>California:</strong> savings of $382.14 at 34.74¢, about $227.20 a month ahead.</li></ul><p>Shorten the Texas loan to 10 years and the payment of $232.11 exceeds savings by $71.33 a month, although the loan is paid off a decade sooner and costs $9,331.87 less in interest.</p><p>The comparison uses year-one, flat-price savings and values every kWh at retail. If your utility credits exports for less, savings will be lower; if prices rise, they will grow. Model those effects in the <a href="/solar-payback-calculator/">solar payback calculator</a>, and check the loan amount against the <a href="/solar-panel-cost-calculator/">cost calculator</a> for your state.</p>
+<h2>Loan, lease or cash: what changes?</h2>
+<p>Ownership changes who gets the savings and any incentives. With a loan or cash, you own the system and its output. With a lease or power purchase agreement (PPA), a solar company owns it and you pay for its use.</p><ul><li><strong>Cash:</strong> no interest, so payback is fastest, but it ties up the full cost.</li><li><strong>Loan:</strong> spreads the cost; the U.S. Department of Energy notes loans can lower up-front costs (<a href="https://www.energy.gov/eere/solar/homeowners-guide-going-solar" rel="nofollow noopener">DOE</a>). Interest adds to the total, as the table above shows.</li><li><strong>Lease:</strong> fixed monthly payments based on estimated output, often with no money down, according to DOE.</li><li><strong>PPA:</strong> you buy the system’s power at a set price per kWh.</li></ul><p>The FTC notes that some federal, state or local incentives are not available if you lease or sign a PPA (<a href="https://consumer.ftc.gov/articles/solar-power-your-home" rel="nofollow noopener">FTC</a>). Rules differ by program: New York’s state credit, for instance, can apply to certain leases and to PPAs of at least ten years (<a href="https://www.tax.ny.gov/pit/credits/solar_energy_system_equipment_credit.htm" rel="nofollow noopener">NY Tax Department</a>). The FTC also advises getting detailed bids from several companies and never signing under pressure. For financing tailored to you, consider speaking with a lender or financial adviser.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>Is there still a 30% solar tax credit in 2026?</summary><p>Not for new home systems. The IRS says the Residential Clean Energy Credit is not available for property placed in service after December 31, 2025 (<a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow noopener">IRS</a>). If a loan offer is structured around a credit you expect to receive, ask how the payment changes when no credit is paid toward the balance.</p></details>
+<details><summary>How much is solar for a 2,000 sq ft house?</summary><p>Floor area does not set the price; your electricity use does. At the 2022 U.S. average use of 10,791 kWh a year, a Texas system of about 7.1 kW costs roughly $16,047 before incentives. Financed over 20 years at 6.99%, a loan of that size would be about $124 a month.</p></details>
+<details><summary>Are solar loans a good idea?</summary><p>A loan can make sense when monthly savings meet or beat the payment, as in the California example above. Where savings are smaller, as with a short term in Texas, you pay more each month than you save until the loan ends. Compare APRs, fees and terms from several lenders before deciding.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">EIA — Electric Power Monthly, Table 5.6.A</a></li>
+<li><a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" rel="nofollow noopener">European Commission JRC — PVGIS</a></li>
+<li><a href="https://www.energysage.com/local-data/solar-panel-cost/" rel="nofollow noopener">EnergySage — Cost of solar panels</a></li>
+<li><a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow noopener">IRS — Residential Clean Energy Credit</a></li>
+<li><a href="https://www.dsireusa.org/" rel="nofollow noopener">DSIRE — Database of State Incentives for Renewables &amp; Efficiency</a></li>
+<li><a href="https://consumer.ftc.gov/articles/solar-power-your-home" rel="nofollow noopener">Federal Trade Commission — Solar Power for Your Home</a></li>
+<li><a href="https://www.energy.gov/eere/solar/homeowners-guide-going-solar" rel="nofollow noopener">U.S. Department of Energy — Homeowner’s Guide to Going Solar</a></li>
+<li><a href="https://www.tax.ny.gov/pit/credits/solar_energy_system_equipment_credit.htm" rel="nofollow noopener">New York State Department of Taxation and Finance — Solar energy system equipment credit</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/solar-payback-calculator/">Solar Payback Calculator</a></li>
+<li><a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a></li>
+<li><a href="/solar-panel-cost/">Solar Panel Cost by State</a></li>
+<li><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a></li>
+<li><a href="/electricity-cost-calculator/">Electricity Cost Calculator</a></li>
+<li><a href="/generator-size-calculator/">Generator Size Calculator</a></li>
+<li><a href="/kwh-calculator/">kWh Calculator</a></li>
+<li><a href="/solar-panel-angle-calculator/">Solar Panel Angle Calculator</a></li>
+</ul>
+<p class="disclaimer">Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/solar-panel-calculator/">Solar Panel Calculator: How Many Panels Do I Need?</a> <a href="/solar-panel-cost-calculator/">Solar Panel Cost Calculator</a> <a href="/electricity-cost-calculator/">Electricity Cost Calculator</a> <a href="/generator-size-calculator/">Generator Size Calculator</a> <a href="/kwh-calculator/">kWh Calculator</a> <a href="/solar-payback-calculator/">Solar Payback Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Estimates only — not financial or tax advice. Your installer’s quote, your roof and your utility’s rules decide the real numbers.</p>
+<p>© <span id="y"></span> Rooftop Payback</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
